@@ -1,0 +1,342 @@
+.product-details {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.product-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.status {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-processing {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-refunded {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Main Container */
+.client-purchase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header Styles */
+  .client-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .client-header h2 {
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .client-nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #7f8c8d;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  
+  .nav-link.active {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Main Content Layout */
+  .purchase-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+  }
+  
+  /* Purchase Form Styles */
+  .purchase-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .purchase-form h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  /* Payment Section */
+  .payment-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .payment-section h4 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  /* Purchase History Styles */
+  .purchase-history {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .purchase-history h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .history-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search-control,
+  .filter-control,
+  .date-control {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .search-control input,
+  .filter-control select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .date-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .date-control label {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  .date-control input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .clear-dates {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* History Table */
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .history-table th {
+    text-align: left;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    color: #34495e;
+    font-weight: 600;
+  }
+  
+  .history-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .history-table tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Status Badges */
+  .status-pending {
+    color: #f39c12;
+    font-weight: 600;
+  }
+  .status-processing {
+    color: #3498db;
+    font-weight: 600;
+  }
+  .status-completed {
+    color: #2ecc71;
+    font-weight: 600;
+  }
+  .status-cancelled {
+    color: #e74c3c;
+    font-weight: 600;
+  }
+  
+  /* No Results Message */
+  .no-results {
+    text-align: center;
+    padding: 30px;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  /* Notifications */
+  .error-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fdecea;
+    color: #e74c3c;
+    border-radius: 4px;
+    border-left: 4px solid #e74c3c;
+  }
+  
+  .success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    color: #2ecc71;
+    border-radius: 4px;
+    border-left: 4px solid #2ecc71;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .purchase-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .history-controls {
+      flex-direction: column;
+    }
+  }
